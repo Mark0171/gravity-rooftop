@@ -1,0 +1,244 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100%;
+    z-index: 1;
+}
+body{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+    max-width: 100% !important;
+}
+header label::before{
+    width: 15px;
+    height: 15px;
+    transform: translateX(19px);
+}
+header label{
+    height: 19px;
+    width: 38px;
+    right: 10px;
+    position: absolute;
+}
+img{
+    max-width: 300px;
+}
+header nav{
+    display: none;
+}
+header h1{
+    font-size: 1rem;
+    letter-spacing: 0;
+    -webkit-text-stroke: 0 transparent;
+    color: white;
+}
+header{
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width:100%;
+    z-index: 10;
+    height: 3rem;
+    background-color: #ffcc009a;
+    backdrop-filter: blur(8px);
+    margin: 0;
+}
+.line{
+    display: none;
+}
+.address{
+    display: none;
+}
+.footer-container{
+    flex-direction: column;
+}
+footer a{
+    word-wrap: break-word;
+}
+.foodcard, .fullcard{
+    max-width: 100%;
+    flex-direction: column;
+    /* display: none; */
+}
+img{
+    max-height: 200px;
+    max-width: 200px;
+    /* display: none; */
+}
+.section{
+    margin: 0;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    
+}
+.section .blur , .dark .section .blur{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    inset: 0;
+    margin: 0;
+    padding: 8vh 5%;
+    display: block;
+    backdrop-filter: blur(0);
+    background: transparent;
+    border: none;
+}
+.dark .section .blur h2{
+    color: black;
+}
+.section .blur h2{
+    font-size: 2rem;
+}
+.blur button i{
+    display: block;
+    background: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+.blur p{
+    font-size: 2rem;
+}
+.blur button{
+    background: none;
+    font-size: 1.1rem;
+    border: #111c 1px solid;
+    /* color: #111c; */
+    /* padding: 5px; */
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    bottom: 5vh;
+    right: calc(50% - 1.3rem);
+    /* transform: translate(50%); */
+}
+.arrows{
+    display: none;
+}
+.secsec{
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    min-height: 100vh;
+}
+#section2 h3, #section2 strong{
+    font-size: 1.7rem;
+}
+.secsec .fullcard, .secsec .foodcard{
+    /* border: 1px solid red; */
+    min-height: 80vh;
+    width: 100vw;
+    flex-direction: column-reverse;
+    padding: 0;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* overflow: auto; */
+}
+.fullcard div, .foodcard div{
+    padding: 0;
+}
+.none{
+    opacity: 1;
+    display: flex;
+    position: relative;
+}
+.secsec .fullcard h4, .secsec .foodcard h4{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    /* display: none; */
+}
+.secsec .fullcard p, .secsec .foodcard p{
+    display: none;
+}
+
+.secsec img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#section3{
+    display: none;
+}
+/* #section2{
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+} */
+
+.secsec .flex-card{
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.secsec .fullcard, .secsec .foodcard{
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+}
+.mobile-nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+.mobile-nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    height: 3rem;
+    background-color: #ffcc00;
+}
+.mobile-nav ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.mobile-nav ul li a, .mobile-nav ul li button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    background: none;
+    font-size: .63em;
+    color: #111c;
+    font-weight: bold;
+    font-family: "Montserrat",sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    padding: 3px;
+    line-height: 1;
+    transition: all .3s;
+}
+.mobile-nav ul li a:hover, .mobile-nav ul li button:hover{
+    border-bottom: 2px solid #111c;
+}
+.dark .mobile-nav ul{
+    background-color: #1f1f1f;
+}
+.dark .mobile-nav ul li a, .dark .mobile-nav ul li button{
+    color: #eeeeee;
+}

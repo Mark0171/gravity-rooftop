@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravity rooftop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Aladin&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 500px)">
+</head>
+<body>
+
+        <header>
+            <div class="flex">
+
+                <h1>Gravity rooftop</h1>
+                <div class="right">
+                    <input type="checkbox" name="" id="switch" onchange="mode_switch()">
+                    <label for="switch"></label>
+
+                </div>
+            </div>
+    <br>
+            <nav>
+                <ul>
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Experiences</a></li>
+                    <li><a href="#section3">Best seller</a></li>
+                    <li><a href="#footer">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+
+    <section class="section" id="section1">
+        <div class="blur">
+
+            <h2>The best view</h2>
+            <div class="flex">
+                <div class="quote" id="quote">
+                    <p>
+                        you, me and a coffee <br>
+                        a date to remember
+                    </p>
+                </div>
+                <div class="line"></div>
+                <div class="address" id="address">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam hic error molestiae dolor, deserunt mollitia quod asperiores iusto accusantium praesentium dolores sed, cupiditate quae nesciunt accusamus tempore ducimus ex ipsam?
+                </div>
+            </div>
+
+            <button onclick="swap('quote', 'address')">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </button>
+
+        </div>
+    </section>
+
+
+    <section class="secsec" id="section2">
+
+        <h3>
+            What makes gravity...<strong>Elevated</strong> 
+        </h3>
+        <div class="flex-card">
+
+
+
+
+            <div class="fullcard flexfull" id="fullcard1">
+
+                <div>
+                    <h4>Late dining at the rooftop</h4>
+                    <br>
+                    <p>Enjoy a beautiful meal on our rooftop by the pyramid with someone you love</p>
+                </div>
+                <img src="images/2.jpg" alt="">
+            </div>
+            <div class="fullcard none" id="fullcard2">
+
+                <div>
+                    <h4>Sound & Light show under the stars</h4>
+                    <br>
+                    <p>Under a sky full of stars, let the rhythm of light and sound awaken your senses,<br>Where every sip tells a story and every moment feels infinite</p>
+                </div>
+                <img src="images/3.jpg" alt="">
+            </div>
+            <div class="fullcard none" id="fullcard3">
+
+                <div>
+                    <h4>Hosting weddings and special occasions</h4>
+                    <br>
+                    <p>Celebrate love, laughter, and unforgettable moments beneath the stars,<br>Where every occasion is lit by magic, music, and memories that last a lifetime</p>
+                </div>
+                <img src="images/4.jpg" alt="">
+            </div>
+            <div class="fullcard none" id="fullcard4">
+
+                <div>
+                    <h4>Family gatherings</h4>
+                    <br>
+                    <p>From shared meals to childhood stories retold for the hundredth time,<br>It’s not just a gathering, it’s coming home</p>
+                </div>
+                <img src="images/5.jpg" alt="">
+            </div>
+            <div class="fullcard none" id="fullcard5">
+
+                <div>
+                    <h4>Sunset</h4>
+                    <br>
+                    <p>As the sun slips away, let hearts gather in the hush of dusk,<br>Where soft conversations, shared plates, and lingering glances turn evening into something unforgettable</p>
+                </div>
+                <img src="images/6.jpg" alt="">
+            </div>
+            <div class="fullcard none" id="fullcard6">
+                <div>
+                    <h4>Sunrise breakfasts</h4>
+                    <br>
+                    <p>As the sun rises over ancient wonders, share a rooftop meal where history greets the morning in the golden hours and every bite feels timeless</p>
+                </div>
+                <img src="images/7.jpg" alt="">
+            </div>
+
+
+
+
+
+        </div>
+
+
+        <div class="btn-container">    
+            <button class="arrows" id="left" onclick="checkPrevRadio('fullcard')">&#10094</button>
+            <button class="arrows" id="right" onclick="checkNextRadio('fullcard', 'section2')">&#10095</button>
+        </div>
+
+
+    </section>
+
+
+
+    
+
+
+
+    <section class="secsec offers" id="section3">
+        <h3>Best plates</h3>
+
+        <div class="flex-card">
+
+
+
+            <div class="foodcard flexfull" id="foodcard1">
+
+                <div>
+                    <h4>Name Placeholder</h4>
+                    <br>
+                    <p>Contents and Description Placeholder</p>
+                </div>
+                <img src="images/8.jpg" alt="">
+            </div>
+            <div class="foodcard none" id="foodcard2">
+
+                <div>
+                    <h4>Name Placeholder</h4>
+                    <br>
+                    <p>Contents and Description Placeholder</p>
+                </div>
+                <img src="images/9.jpg" alt="">
+            </div>
+            <div class="foodcard none" id="foodcard3">
+
+                <div>
+                    <h4>Name Placeholder</h4>
+                    <br>
+                    <p>Contents and Description Placeholder</p>
+                </div>
+                <img src="images/10.jpg" alt="">
+            </div>
+            <div class="foodcard none" id="foodcard4">
+
+                <div>
+                    <h4>Name Placeholder</h4>
+                    <br>
+                    <p>Contents and Description Placeholder</p>
+                </div>
+                <img src="images/11.jpg" alt="">
+            </div>
+            <div class="foodcard none" id="foodcard5">
+
+                <div>
+                    <h4>Name Placeholder</h4>
+                    <br>
+                    <p>Contents and Description Placeholder</p>
+                </div>
+                <img src="images/12.jpg" alt="">
+            </div>
+            <div class="foodcard none" id="foodcard6">
+                <div>
+                    <h4>Name Placeholder</h4>
+                    <br>
+                    <p>Contents and Description Placeholder</p>
+                </div>
+                <img src="images/13.jpg" alt="">
+            </div>
+
+
+
+
+        </div>
+
+        <div class="obtn-container">    
+            <button class="arrows oarrows" id="oleft" onclick="checkPrevRadio('foodcard')">&#10094</button>
+            <button class="arrows oarrows" id="oright" onclick="checkNextRadio('foodcard', 'section3')">&#10095</button>
+        </div>
+<!-- 
+        <div class="oradio-container">
+            <input type="radio" name="oscroll" id="oslide1" onclick="scrollOnCheck('oslide1', 'oslide2', 'oslide3', 'oslide4', '.ocard')" checked>
+            <input type="radio" name="oscroll" id="oslide2" onclick="scrollOnCheck('oslide1', 'oslide2', 'oslide3', 'oslide4', '.ocard')">
+            <input type="radio" name="oscroll" id="oslide3" onclick="scrollOnCheck('oslide1', 'oslide2', 'oslide3', 'oslide4', '.ocard')">
+            <input type="radio" name="oscroll" id="oslide4" onclick="scrollOnCheck('oslide1', 'oslide2', 'oslide3', 'oslide4', '.ocard')">
+        </div> -->
+
+    </section>
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-sections">
+                <h4 id="h41">
+                    GRAVITY ROOFTOP
+                </h4>
+                <ul>
+                    <li><a href="">Cafe Location</a></li>
+                    <li><a href="">Our menu</a></li>
+                    <li><a href="">Contanct us</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                <h4 id="h42">
+                    WE'D LOVE TO HEAR FROM YOU!
+                </h4>
+                <ul>
+                    <li><a href="">customerservice@gravityrooftop.net</a></li>
+                    <li><a href="">012345678910</a></li>
+                    <li><a href="">Terms of Service</a></li>
+                    <li><a href="">Refund policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-sections">
+                <h4 id="h43">
+                    SOCIAL MEDIA
+                </h4>
+                <ul class="icon-container">
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="below-footer"><div class="dev">Mark Hanna</div> <p>© 2025, Gravity Rooftop</p></div>
+    </footer>
+
+    <div class="mobile-nav">
+        <nav>
+            <ul>
+                <li><a href="#section1">Home</a></li>
+                <li><button onclick="showExperiences()">Experiences</button></li>
+                <li><button onclick="showBest()">Best seller</button></li>
+                <li><a href="#footer">About us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
