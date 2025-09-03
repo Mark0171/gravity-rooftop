@@ -82,7 +82,7 @@ img{
     backdrop-filter: blur(8px);
 }
 #section1{
-    height: 100%;
+    height: calc(100% - 3rem);
 }
 .section .blur , .dark .section .blur{
     position: relative;
@@ -245,5 +245,6 @@ img{
     color: #eeeeee;
 
 }
+
 
 
