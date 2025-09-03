@@ -80,7 +80,9 @@ img{
     position: relative;
     background-color: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
-    
+}
+#section1{
+    height: 100%;
 }
 .section .blur , .dark .section .blur{
     position: relative;
@@ -241,4 +243,5 @@ img{
 }
 .dark .mobile-nav ul li a, .dark .mobile-nav ul li button{
     color: #eeeeee;
+
 }
